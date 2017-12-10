@@ -39,6 +39,87 @@ Si consultamos la lista de proyectos que están siendo apoyados por la [Processi
 * [Web oficial del proyecto][7].
 * [Repositorio en GitHub][16].
 
+# Primeros pasos con P5.js
+
+Para empezar a programar nuestros primeros *sketches* con [p5.js][4] podemos elegir una de las siguientes opciones que se muestran a continuación.
+
+## Configuración de los archivos necesarios
+
+### Opción 1
+
+Para poder ejecutar nuestros *sketches* en un navegador web sólo necesitamos tener un archivo HTML que incluya la librería [p5.js][17] o la versión reducida [p5.min.js][18] y un archivo con el código de nuestro *sketch*. Podemos poner el nombre que queramos al archivo que contiene el código de nuestro *sketch*, en el siguiente ejemplo lo hemos llamado `sketch.js`.
+
+**`index.html`**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+### Opción 2
+
+Todas las versiones de la librería `p5.js` están almacenadas en un CDN (*Content Delivery Network*), de modo que podemos enlazarlas directamente en nuestro archivo HTML.
+
+**`index.html`**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+### Opción 3
+
+Podemos descargar [este proyecto de ejemplo][20] que contiene todos los archivos necesarios para empezar a trabajar en nuestro equipo de forma local.
+
+El contenido del proyecto de ejemplo es el siguiente:
+
+```
+├── addons
+│   ├── p5.dom.js
+│   ├── p5.dom.min.js
+│   ├── p5.sound.js
+│   └── p5.sound.min.js
+├── empty-example
+│   ├── index.html
+│   └── sketch.js
+├── p5.js
+└── p5.min.js
+```
+
+### Opción 4
+
+También podemos trabajar sobre [esta plantilla en codepen][21].
+
+## Contenido del archivo `sketch.js`
+
+Las dos funciones principales que vamos a tener en nuestro archivo `sketch.js` son `setup` y `draw`.
+
+La función `setup` sólo se ejecuta una vez al inicio y la función `draw` se ejecuta indefinidamente a no ser que se indique lo contrario.
+
+```javascript
+function setup() {
+
+}
+
+function draw() {
+
+}
+```
+
 # Conceptos básicos
 
 Todos los ejemplos que se muestren a partir de ahora estarán basados en [P5.js][4].
@@ -154,3 +235,8 @@ function draw() {
 [14]: https://github.com/processing/p5.js
 [15]: https://github.com/jdf/processing.py
 [16]: https://github.com/processing-js/processing-js/
+[17]: https://github.com/processing/p5.js/releases/download/0.5.16/p5.js
+[18]: https://github.com/processing/p5.js/releases/download/0.5.16/p5.min.js
+[19]: http://cdnjs.com/libraries/p5.js
+[20]: https://p5js.org/download/
+[21]: https://codepen.io/p5js/pen/wreBKy
