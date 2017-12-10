@@ -160,22 +160,38 @@ Todos los ejemplos que se muestren a partir de ahora estarán basados en [P5.js]
 
 ## Interact
 
+# Ejemplos
+
+## Ejemplo 1
+
 ```javascript
 function setup() {
-  createCanvas(500,400);
-  background(0);
+  createCanvas(640, 480);
 }
 
 function draw() {
-  stroke(255);
-  fill(128);
-  ellipse(mouseX, mouseY, 100, 100);
+  ellipse(mouseX, mouseY, 50, 50);
 }
 ```
 
+## Ejemplo 2
+
 ```javascript
 function setup() {
-  createCanvas(480, 120);
+  createCanvas(640, 480);
+}
+
+function draw() {
+  background(255);
+  ellipse(mouseX, mouseY, 50, 50);
+}
+```
+
+## Ejemplo 3
+
+```javascript
+function setup() {
+  createCanvas(640, 480);
 }
 
 function draw() {
@@ -184,19 +200,58 @@ function draw() {
   } else {
     fill(255);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  ellipse(mouseX, mouseY, 50, 50);
 }
 ```
 
+## Ejemplo 4
+
 ```javascript
 function setup() {
-  createCanvas(400, 400);
-  stroke(255);
+  createCanvas(640, 480);
 }
 
 function draw() {
   background(192, 64, 0);
   line(150, 25, mouseX, mouseY);
+}
+```
+
+## Ejemplo 5
+
+```javascript
+function setup() {
+  createCanvas(640, 480);
+}
+
+function draw() {
+  background(255);
+  line(width/2, height/2, mouseX, mouseY);
+}
+```
+
+## Ejemplo 6
+
+```javascript
+function setup() {
+  createCanvas(640, 480);
+}
+
+function draw() {
+  line(mouseX, mouseY, pmouseX, pmouseY);
+}
+```
+
+## Ejemplo 7
+
+```javascript
+function setup() {
+  createCanvas(640, 480);
+}
+
+function draw() {
+  background(255);
+  line(mouseX, mouseY, pmouseX, pmouseY);
 }
 ```
 
